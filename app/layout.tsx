@@ -24,14 +24,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        <nav className="flex gap-4 p-4 border-b">
-          <Link href="/">Home</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
-        {children}
-      </body>
+      <body>
+  <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/80 backdrop-blur">
+    <nav className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
+      <a href="/" className="font-bold">Rascal</a>
+      <div className="flex gap-6 text-sm">
+        <a href="/" className="hover:text-[var(--accent)]">Home</a>
+        <a href="/projects" className="hover:text-[var(--accent)]">Projects</a>
+        <a href="/contact" className="hover:text-[var(--accent)]">Contact</a>
+      </div>
+    </nav>
+  </header>
+  {children}
+</body>
     </html>
   );
 }
