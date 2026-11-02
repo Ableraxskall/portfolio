@@ -1,4 +1,5 @@
 import { getSkills } from "@/lib/api";
+import Image from "next/image";
 export const instant = false;
 export default async function Home() {
   const skills = await getSkills();
@@ -7,7 +8,14 @@ export default async function Home() {
     <main className="mx-auto max-w-4xl space-y-20 px-6 py-16">
       {/* Hero */}
       <section className="flex flex-col items-center gap-4 text-center">
-        <div className="h-28 w-28 rounded-full border-2 border-[var(--accent)] bg-[var(--card)]" />
+    <Image
+          src="/profile.jpg"
+          alt="AbleRaxskall"
+          width={112}
+          height={112}
+          className="h-28 w-28 rounded-full border-2 border-[var(--accent)] object-cover"
+          priority
+        />        
         <h1 className="text-4xl font-bold">Hi, I&apos;m AbleRaxskall</h1>
         <p className="max-w-md text-[var(--muted)]">
             Statistics major and "for fun" developer.
