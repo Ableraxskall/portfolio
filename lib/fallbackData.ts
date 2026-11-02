@@ -19,7 +19,7 @@ export const projects: Project[] = [
     slug: "turtle-multiplayer",
     title: "TurtleSim Multiplayer",
     description:
-      "A two-player multiplayer game built on ROS2 turtlesim, with a TypeScript gateway that assigns player roles by IP, clamps speed, and stops a turtle on disconnect.",
+      "A way to play turtlesim with 2 players in ROS2 instead of the usual one-player gameplay. Uses a Typescript gateway that assigns player roles by IP, clamps speed, and stops a turtle on disconnect.",
     tags: ["ROS2", "TypeScript", "WebSocket"],
     link: "https://github.com/Magang-Barunastra-2026/pgr-ableraxskall-task4",
   },
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     slug: "portfolio-website",
     title: "Portfolio Website",
     description:
-      "This site — a Next.js + TypeScript portfolio with typed project/skill data, built to be responsive and deployed on Vercel.",
+      "The current website you are looking at. A Next.js + Typescript portfolio with typed project/skill data, built to be responsive and deployed on Vercel.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     link: "https://github.com/AbleRaxskall/portfolio",
   },

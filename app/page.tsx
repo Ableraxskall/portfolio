@@ -10,7 +10,7 @@ export default async function Home() {
         <div className="h-28 w-28 rounded-full border-2 border-[var(--accent)] bg-[var(--card)]" />
         <h1 className="text-4xl font-bold">Hi, I&apos;m AbleRaxskall</h1>
         <p className="max-w-md text-[var(--muted)]">
-          Statistics major &amp; intern at Barunastra ITS — building things with code, ROS2, and data.
+            Statistics major and "for fun" developer.
         </p>
         <a
           href="/projects"
@@ -51,8 +51,14 @@ export default async function Home() {
         <h2 className="text-2xl font-semibold">Achievements</h2>
         <ul className="space-y-2 text-[var(--muted)]">
           <li className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-4">
-            Completed Barunastra ITS Web Development internship task (Next.js, ROS2 multiplayer gateway, Dockerized REST API)
+              OSN Participant - Mathematics - 2024/2025
           </li>
+          <li className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-4">
+             Cambridge English Qualification (CEQ) - C2 - Score : 204
+        </li>
+        <li className="rounded-lg border border-[var(--border)] bg-[var(--card)] p-4">
+            Intern at Barunastra ITS.
+       </li>
         </ul>
       </section>
     </main>
