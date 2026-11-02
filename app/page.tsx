@@ -1,5 +1,5 @@
 import { getSkills } from "@/lib/api";
-
+export const instant = false;
 export default async function Home() {
   const skills = await getSkills();
 

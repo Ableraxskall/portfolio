@@ -1,5 +1,5 @@
 import { getProjects } from "@/lib/api";
-
+export const instant = false;
 export default async function Projects() {
   const projects = await getProjects();
 
